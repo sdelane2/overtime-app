@@ -5,7 +5,6 @@ RSpec.describe User, type: :model do
     before do
       @user = User.create(email: "test@test.com", password: "testing", password_confirmation: "testing", first_name: "Sean", last_name: "Delaney")
     end
- 
     it "can be created" do
       expect(@user).to be_valid
     end
